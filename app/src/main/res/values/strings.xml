@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sign_in_up</string>
+    <string name="action_settings">设置</string>
+    <string name="TextView">欢迎使用地狱巡游系统!</string>
+    //@小林:我与小林同事的日子
+    <string name="EditTextName">请输入帐号</string>
+    <string name="EditTextPassword">请输入密码</string>
+</resources>
