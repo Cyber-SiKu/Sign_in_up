@@ -10,4 +10,6 @@
 
 \# MODIFIED: 2017-03-25 23:28:15
 
-andriod homework
+#andriod homework
+
+I finished it with so easy way,but I wanted to update it with database;
