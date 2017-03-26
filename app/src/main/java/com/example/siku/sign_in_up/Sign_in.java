@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class Sign_in extends AppCompatActivity implements View.OnClickListener{
@@ -27,7 +28,14 @@ public class Sign_in extends AppCompatActivity implements View.OnClickListener{
             startActivity(intent);
         }else{
             //sign in
-            Toast.makeText(Sign_in.this,"登录成功!",Toast.LENGTH_SHORT).show();
+            EditText username = (EditText) findViewById(R.id.username);
+            EditText password = (EditText) findViewById(R.id.password);
+            UsernamePassword up = new UsernamePassword(username.getText().toString(),password.getText().toString());
+            if (UsernamePasswordList.contains(up)){
+                Toast.makeText(Sign_in.this, "登录成功!", Toast.LENGTH_SHORT).show();
+            } else{
+                Toast.makeText(Sign_in.this, "不存在此用户!", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 }

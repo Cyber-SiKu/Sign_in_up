@@ -9,6 +9,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class EnterActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
@@ -17,6 +19,10 @@ public class EnterActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_enter);
         Button button_entry = (Button) findViewById(R.id.button_entry);
         button_entry.setOnClickListener(this);
+
+        UsernamePasswordList.up_arry_ = new ArrayList<UsernamePassword>();
+        UsernamePassword root = new UsernamePassword("siku","cy");
+        UsernamePasswordList.up_arry_.add(root);
     }
 
     @Override

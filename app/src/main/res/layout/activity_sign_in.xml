@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
-                android:id="@+id/username"
+                android:id="@+id/show_username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="用户名 "
@@ -32,7 +32,7 @@
             </TextView>
 
             <EditText
-                android:id="@+id/edit_name"
+                android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/EditTextName"
@@ -44,14 +44,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
-                android:id="@+id/password"
+                android:id="@+id/show_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="密    码 "
                 android:textSize="20dp">
             </TextView>
             <EditText
-                android:id="@+id/edit_password"
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/EditTextPassword"
